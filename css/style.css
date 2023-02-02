@@ -1,36 +1,41 @@
 /* Created by Santiago Tolosa */
 
+html {
+    background: #0d1220;
+}
+
 /* Fonts */
 
 @font-face {
-    font-family: 'GT Walsheim Pro';
-    src: local("GT Walsheim Pro Regular"),local("GTWalsheimProRegular"),
-    url(../fonts/GTWalsheimProRegular.woff2) format("woff2"),
-    url(../fonts/GTWalsheimProRegular.woff) format("woff"),
-    url(../fonts/GTWalsheimProRegular.ttf) format("truetype");
+    font-family: 'Poppins';
+    src: local("Poppins"),local("Poppins"),
+    url(../fonts/Poppins.woff2) format("woff2"),
+    url(../fonts/Poppins.woff) format("woff"),
+    url(../fonts/Poppins.ttf) format("truetype");
     font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: local("Poppins Bold"),local("Poppins Bold"),
+    url(../fonts/Poppins Bold.woff2) format("woff2"),
+    url(../fonts/Poppins Bold.woff) format("woff"),
+    url(../fonts/Poppins Bold.ttf) format("truetype");
+    font-weight: 700;
     font-style: normal
 }
   
 @font-face {
-font-family: 'GT Walsheim Pro';
-src: local("GT Walsheim Pro Bold"),local("GTWalsheimProBold"),
-url(../fonts/GTWalsheimProBold.woff2) format("woff2"),
-url(../fonts/GTWalsheimProBold.woff) format("woff"),
-url(../fonts/GTWalsheimProBold.ttf) format("truetype");
-font-weight: 700;
+font-family: 'Poppins ExtraBold';
+src: local("Poppins ExtraBold"),local("Poppins ExtraBold"),
+url(../fonts/Poppins ExtraBold.woff2) format("woff2"),
+url(../fonts/Poppins ExtraBold.woff) format("woff"),
+url(../fonts/Poppins ExtraBold.ttf) format("truetype");
+font-weight: 800;
 font-style: normal;
 }
 
-@font-face {
-    font-family: 'GT Walsheim Pro';
-    src: local('GT Walsheim Pro UltraBold'), local('GT-Walsheim-Pro-UltraBold'),
-        url('GTWalsheimPro-UltraBold.woff2') format('woff2'),
-        url('GTWalsheimPro-UltraBold.woff') format('woff'),
-        url('GTWalsheimPro-UltraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-  }
 
 /* Colors */
 
@@ -44,27 +49,91 @@ font-style: normal;
 
 /* Styles */
 
+.navbar{
+    background: transparent;
+    margin-top: 2em;
+}
+.navbar a.navbar-item {
+    color: #fff;
+    font-family: 'Poppins Extrabold', sans-serif;
+    font-weight: 800;
+    transition: .3s all ease;
+    border-bottom: 1px solid transparent;
+    padding: 0;
+    margin: 0 1em
+}
+
+.navbar a.navbar-item:hover{
+    color: #fff;
+    background: transparent;
+    border-color: #fff;
+    transform: scale(1.1);
+}
+
+.navbar-item .button {
+    background: var(--gradient-horizontal);
+    color: #fff;
+    font-family: 'Poppins Extrabold', sans-serif;
+    border:none;
+    border-radius: 50px;
+    padding: 1.5em 2em;
+    line-height: 1.2
+}
+.navbar-item .button:hover{
+    transform: scale(1.05);
+}
+
+.navbar-burger {
+    cursor: none;
+}
+
 .hero-main{
-    background: url(../img/herobg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #0d1220;
 }
 
 .main-title {
-    font-family: 'GT Walshein Pro', Serif;
-    font-size: 80px;
+    font-family: 'Poppins ExtraBold', Serif;
+    font-size: 3em;
     font-weight: 800;
     color: #fff;
 }
 .subtitle{
-    font-family: 'GT Walshein Pro', Serif;
-    font-size: 40px;
-    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #fff;
 }
 
 .subtitle strong{
-    -webkit-text-fill-color: transparent;
+    font-family: 'Poppins Extrabold', sans-serif;
+    font-weight: 800;
     background: var(--gradient-horizontal);
-    -webkit-background-clip: text;
+    background-size: 200% auto;
     background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 6.5s ease-in infinite;
+}
+
+@keyframes gradient{
+    0%  {background-position: 0% center; }
+    50% {background-position: 200% center;}
+    100% {background-position: 0% center;}
+}
+
+/* Media queries */
+
+@media screen and (min-width: 580px){
+    .main-title{
+        font-size: 5em;
+    }
+    .subtitle {
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .hero-main .hero-body {
+        padding-left: 0;
+    }
 }
