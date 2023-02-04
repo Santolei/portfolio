@@ -9,5 +9,13 @@ $(document).ready(function() {
        
     });
 
-    
+    // blur effect on portfolio projects
+
+    $(".portfolio .work").hover(function(){
+        $(".portfolio .work").not(this).css("filter", "blur(20px)");
+        $(".portfolio").css("background", "linear-gradient(to right, #0d1220,#007fa7, #0d1220)");
+    }, function(){
+        $(".portfolio .work").css("filter", "none");
+        $(".portfolio").css("background", "#0d1220");
+    });
 });

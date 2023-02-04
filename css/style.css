@@ -265,8 +265,13 @@ font-style: normal;
 } */
 
 .portfolio{
-    overflow: hidden;
+    
 }
+.portfolio {
+    overflow: hidden;
+    background: #0d1220;
+    transition: .3s all ease;
+  }
 
 .portfolio .work {
     width: 300px;
@@ -315,8 +320,8 @@ font-style: normal;
     z-index: 10; 
 }
 
-.portfolio .work:hover.work {
-    transform:scale(1.05);
+.portfolio .work:hover {
+    transform:scale(1.15);
     box-shadow: 2px 2px 8px var(--color1),-2px -15px 20px var(--color2);
 }
 
