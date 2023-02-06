@@ -7,8 +7,10 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/carousel.css">
   </head>
   <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -252,29 +254,33 @@
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="columns works">
-                <div class="column is-6">
-                    <div class="columns">
-                        <div class="column has-background-info">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi consequuntur facere sapiente excepturi temporibus corporis. Delectus corporis quas aspernatur, iste necessitatibus impedit aliquam placeat. Quam similique sint provident consequatur aliquam.</p>
-                        </div>
-                        <div class="column has-background-grey-lighter">2</div>
-                    </div>
-                </div>
-    
-                <div class="column is-6">
-                    <div class="columns">
-                        <div class="column has-background-danger">3</div>
-                <div class="column has-background-white-bis">4</div>  
-                    </div>
-                </div>
-            </div> -->
+            
         </div>
     </section>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
     <footer></footer>
     <!-- Scripts -->
     <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/carousel.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
