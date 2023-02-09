@@ -262,10 +262,9 @@ font-style: normal;
   }
 
 .portfolio .work {
-    
     -webkit-box-shadow: 1px 2px 5px #030303;
     box-shadow: 1px 2px 5px #030303;
-    overflow: hidden;
+    /* overflow: hidden; */
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease;
