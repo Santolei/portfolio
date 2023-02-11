@@ -187,7 +187,9 @@ font-style: normal;
 }
 
 .skills .title,
-.portfolio .title {
+.portfolio .title,
+.just-for-fun .title
+{
     font-family: 'Poppins ExtraBold', Serif;
     font-size: 2.5em;
     font-weight: 800;
@@ -296,6 +298,9 @@ font-style: normal;
     box-shadow: 2px 2px 8px var(--color1),-2px -15px 20px var(--color2);
 }
 
+.just-for-fun {
+    background: #f2f2f2;
+}
 /* Media queries */
 
 @media screen and (min-width: 580px){
